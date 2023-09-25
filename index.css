@@ -1,0 +1,153 @@
+/*
+Alice blue : #E9F1F7
+UCLA Blue : #2274A5
+*/
+
+@font-face {
+    font-family: 'CooperHewitt';
+    src: url('./assets/CooperHewitt-Heavy.otf') format('opentype');
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+    color: white;
+
+    
+}
+
+
+section {
+
+    max-height: 100vh;
+}
+
+body {
+    background-color: #131B23;
+}
+
+#nav {
+    position: absolute;
+    background-color: red;
+    width: 0;
+    height: 100%;
+    z-index: 5;
+
+    transition: width ease 0.5s;
+}
+
+#nav-back {
+    left: 0;
+    width: 0;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.3;
+    border-style: none;
+
+    position: absolute;
+    z-index: 4;
+}
+
+#nav-button {
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+
+    width: 40px;
+    border-style: none;
+    padding: 10px;
+    position: absolute;
+    z-index: 6;
+}
+
+#nav-parent {
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.nav-child {
+    list-style-type: none;
+}
+
+#section-1 {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 100px;
+
+}
+
+#s1-header {
+    margin-left: 40px;
+    font-family: "CooperHewitt";
+
+    font-size: clamp(50px, 21vw, 200px);
+    line-height: clamp(50px, 19vw, 165px);
+
+
+    z-index: 2;
+
+}
+
+
+
+#s1-bottom {
+
+    /* 160px heihgt*/
+
+    height: 1000px;
+    width: 300px;
+    background-color: #374A67;
+
+    transform: rotate(120deg);
+}
+
+
+#section-2 {
+    height: 100vh;
+    width: 100%;
+    background-color: #374A67;
+
+}
+
+#s2-grid-parent {
+    background-color: rebeccapurple;
+
+    border-color: red;
+
+    margin: auto;
+    height: 100%;
+    width: 90%;
+}
+
+/* ------------*/
+.scroll-control {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+.scroll-control span {
+    cursor: pointer;
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin: 10px 0;
+    background-color: #000;
+    opacity: 0.7;
+}
+.scroll-control span:hover {
+    opacity: 1;
+}
+@media all and (max-width: 1023px) {
+    .scroll-control span {
+        display: none;
+    }
+}
