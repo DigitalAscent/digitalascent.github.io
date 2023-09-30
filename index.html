@@ -4,48 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css" />
-    <title>LOREM</title>
+    <title>DA</title>
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Imports -->
+    <link rel="stylesheet" href="./index.css" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div id="scroller">
-        <section class="scroll" style="height: 100vh; overflow: hidden;">
-            <nav id="nav-container">
-                <button id="nav-button"><img src="./assets/icons8-menu-bar.svg" /> </button>
-                <div id="nav"></div><button id="nav-back"></button>
-            </nav>
-            <section id="section-1">
-                <div style="z-index: 2;">
-                    <h1 id="s1-header">LOREM <span style="display: block; margin-left: 40px;">IPSUM</span></h1>
-                </div>
-                <div id="s1-bottom"></div>
-            </section>
-        </section>
-        <section class="scroll" id="section-2">
-            <div id="s2-grid-parent">
-                <div id="s2-grid-child"></div>
-                <div id="s2-grid-child"></div>
-                <div id="s2-grid-child"></div>
-                <div id="s2-grid-child"></div>
-                <div id="s2-grid-child"></div>
-        </section>
+    <div id="load-grandparent">
+        <div id="load-parent">
+            <h1 id="load-text">1</h1>
+            <button id="load-button"></button>
+        </div>
+    </div>
+    <div id="main">
+        <h1 class="main-h1">DIGITAL ASCENT</h1>
+        <div id="link-container">
+            <div id="links"><a>Our Games</a><a>About</a></div>
+            <div style="display: flex; justify-content: end;">
+                <h3><a id="link-github" target="_blank"
+                        href="https://github.com/DigitalAscent/digitalascent.github.io"><span
+                            style="text-decoration: none;">Open source on</span> Github</a>
+                </h3> <img id="img-github" src="./assets/icons8-github-60.png" />
+            </div>
+        </div>
     </div>
     <script src="./index.js"></script>
-    <script src="./jquery-3.2.1.js"></script>
-    <script src="./jquery.scrollify.js"></script>
-    <script>
-    $(function() {
-            $.scrollify({
-                section : ".scroll",
-            });
-    });            
-    </script>
 </body>
 
 </html>
