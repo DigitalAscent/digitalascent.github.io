@@ -18,6 +18,7 @@ if (noLoading === 1) {
             document.getElementById("main").style.visibility = "visible";
             document.getElementById("main").style.opacity = 1;
             document.getElementById("load-parent").style.opacity = 0;
+            document.getElementById("load-parent").style.display = "none";
         } else {
             document.getElementById("load-parent").style.opacity = 1;
             document.body.style.backgroundColor = "white";

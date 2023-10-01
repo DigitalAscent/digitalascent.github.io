@@ -1,6 +1,6 @@
 * {
     font-family: "Inter";
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 body {
@@ -80,7 +80,6 @@ section {
 
 #load-parent {
     height: 100vh;
-    overflow-y: hidden;
     opacity: 0;
 
     display: grid;
@@ -91,6 +90,8 @@ section {
 }
 
 #load-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
     margin: auto;
     color: white;
     transition: opacity ease 2s;
