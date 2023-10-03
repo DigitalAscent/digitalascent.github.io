@@ -1,6 +1,6 @@
 // ---------------
 // Debug
-const noLoading = 1;
+const noLoading = 0;
 
 if (noLoading === 1) {
     document.getElementById("load-grandparent").style.display = "none";
