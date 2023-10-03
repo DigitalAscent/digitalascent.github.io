@@ -129,14 +129,6 @@ document.getElementById("s1-h1-container").addEventListener("mouseenter", () => 
     document.getElementById("navigation").style.opacity = 0;
 })
 
-
-/// --------------------
-
-
-/// --------------------
-
-
-
 document.getElementById("nav-btn1").addEventListener("click", () => { handleNavClick(1) })
 document.getElementById("nav-btn2").addEventListener("click", () => { handleNavClick(2) })
 document.getElementById("nav-btn3").addEventListener("click", () => { handleNavClick(3) })
@@ -146,16 +138,16 @@ function handleNavClick(i) {
 document.body.style.opacity = "0"
     if (i === 1) {
         setInterval(() => {
-            window.location.href = "/games.html"
+            window.location.href = "./games"
         }, 1000);
 
     } else if (i === 2) {
         setInterval(() => {
-            window.location.href = "/credits.html"
+            window.location.href = "./credits"
         }, 1000); 
     } else if (i == 3) {
         setInterval(() => {
-            window.location.href = "/about.html"
+            window.location.href = "./about"
         }, 1000);
     }
     
