@@ -22,21 +22,44 @@
     </div>
     <main id="main">
         <section id="s1">
-            <div id="nav-hover"></div>
+
             <nav id="navigation">
-                <ul id="ul">
-                    <li id="foo1">Our games</li>
-                    <li id="foo2">Credits</li>
-                    <li id="foo3">About</li>
-                </ul>
-                
+                <div id="ul">
+                    <button id="nav-btn1">Our Games</button>
+                    <button id="nav-btn2">Credits</button>
+                    <button id="nav-btn3">About</button>
+                </div>
             </nav>
             <div id="s1-h1-container">
+                <div id="nav-hover"></div>
                 <h1 class="main-h1">DIGITAL ASCENT</h1>
             </div>
         </section>
     </main>
     <script src="./index.js"></script>
+    <noscript>
+
+        <style type="text/css">
+            #main {
+                display: none;
+            }
+
+            .noscriptmsg {
+                margin-top: 50vh;
+                text-align: center;
+                align-self: center;
+                color: white;
+                font-size: 2vw;
+            }
+        </style>
+
+        <div class="noscriptmsg">
+
+            You don't have javascript enabled. Good luck with that.
+
+        </div>
+
+    </noscript>
 </body>
 
 </html>

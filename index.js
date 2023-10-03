@@ -1,6 +1,6 @@
 // ---------------
 // Debug
-const noLoading = 0;
+const noLoading = 1;
 
 if (noLoading === 1) {
     document.getElementById("load-grandparent").style.display = "none";
@@ -109,8 +109,6 @@ if (noLoading === 1) {
 }
 
 //-------------------
-const ourGames = document.getElementById("button-ourgames")
-const about = document.getElementById("button-about")
 
 /*
 ourGames.addEventListener("click", () => navClick("ourgames"))
@@ -121,19 +119,46 @@ function navClick (x) {
     document.body.style.backgroundColor = "black"
 }*/
 //-----------------
+document.getElementById("nav-hover").addEventListener("mouseenter", () => {
+    document.getElementById("s1").style.gridTemplateColumns = "1fr 3fr"
+    document.getElementById("navigation").style.opacity = 1;
+})
 
-    document.getElementById("nav-hover").addEventListener("mouseenter", () => {
-        handleNavi(1)
-    })
-    document.getElementById("nav-hover").addEventListener("mouseleave", () => {
-        handleNavi(0)
-    })
-    /// --------------------
+document.getElementById("s1-h1-container").addEventListener("mouseenter", () => {
+    document.getElementById("s1").style.gridTemplateColumns = "0fr 1fr"
+    document.getElementById("navigation").style.opacity = 0;
+})
 
-    function handleNavi(i) {
-        if (i === 0) {
-            document.getElementById("s1").style.gridTemplateColumns = "0fr 1fr"
-        } else {
-            document.getElementById("s1").style.gridTemplateColumns = "1fr 2fr"
-        }
+
+/// --------------------
+
+
+/// --------------------
+
+
+
+document.getElementById("nav-btn1").addEventListener("click", () => { handleNavClick(1) })
+document.getElementById("nav-btn2").addEventListener("click", () => { handleNavClick(2) })
+document.getElementById("nav-btn3").addEventListener("click", () => { handleNavClick(3) })
+
+function handleNavClick(i) {
+    document.body.style.transition = "all ease 1s"
+document.body.style.opacity = "0"
+    if (i === 1) {
+        setInterval(() => {
+            window.location.href = "/games.html"
+        }, 1000);
+
+    } else if (i === 2) {
+        setInterval(() => {
+            window.location.href = "/credits.html"
+        }, 1000); 
+    } else if (i == 3) {
+        setInterval(() => {
+            window.location.href = "/about.html"
+        }, 1000);
     }
+    
+    
+    document.body.style.backgroundColor = "black"
+}
