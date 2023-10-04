@@ -1,5 +1,5 @@
 // Debug
-const noLoading = 0;
+const noLoading = 1;
 
 if (window.location.href.indexOf("status=loaded") > -1) {
     document.getElementById("load-grandparent").style.display = "none";
