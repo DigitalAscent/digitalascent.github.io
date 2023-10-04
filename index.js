@@ -4,7 +4,6 @@
 const noLoading = 0;
 
 if (window.location.href.indexOf("status=loaded") > -1) {
-    
     document.getElementById("load-grandparent").style.display = "none";
     document.getElementById("main").style.visibility = "visible";
     document.getElementById("main").style.opacity = 1;
@@ -24,6 +23,8 @@ if (noLoading === 1) {
     function handleOnLoad(x) {
         if (x === 0) {
             // pressed start button, now remove load screen
+
+            document.getElementById("main").style.transitionDelay = "0s"
 
             document.getElementById("main").style.visibility = "visible";
             document.getElementById("main").style.opacity = 1;
