@@ -31,10 +31,7 @@ section {
 
 
 .main-h1 {
-    font-size: 75px;
-    white-space: nowrap;
 
-    transition: transform ease 3s;
 }
 
 #link-container {
@@ -141,6 +138,9 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    position: absolute;
+    z-index: 5;
 }
 
 #nav-hover {

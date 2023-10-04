@@ -1,5 +1,3 @@
-
-// ---------------
 // Debug
 const noLoading = 0;
 
@@ -8,7 +6,7 @@ if (window.location.href.indexOf("status=loaded") > -1) {
     document.getElementById("main").style.visibility = "visible";
     document.getElementById("main").style.opacity = 1;
     document.body.style.backgroundColor = "white";
-    document.getElementById("main").style.transitionDelay = "0s"
+    document.getElementById("main").style.transitionDelay = "0.5s"
 }
 
 if (noLoading === 1) {
@@ -16,7 +14,7 @@ if (noLoading === 1) {
     document.getElementById("main").style.visibility = "visible";
     document.getElementById("main").style.opacity = 1;
     document.body.style.backgroundColor = "white";
-    document.getElementById("main").style.transitionDelay = "0s"
+    document.getElementById("main").style.transitionDelay = "0.5s"
     // ---------------
 } else {
 
@@ -24,8 +22,7 @@ if (noLoading === 1) {
         if (x === 0) {
             // pressed start button, now remove load screen
 
-            document.getElementById("main").style.transitionDelay = "0s"
-
+            document.getElementById("main").style.transitionDelay = "1s"
             document.getElementById("main").style.visibility = "visible";
             document.getElementById("main").style.opacity = 1;
             document.getElementById("load-parent").style.opacity = 0;
@@ -137,7 +134,7 @@ document.getElementById("nav-btn3").addEventListener("click", () => { handleNavC
 
 function handleNavClick(i) {
     document.body.style.transition = "all ease 1s"
-document.body.style.opacity = "0"
+    document.body.style.opacity = "0"
     if (i === 1) {
         setInterval(() => {
             window.location.href = "./games"
@@ -146,13 +143,14 @@ document.body.style.opacity = "0"
     } else if (i === 2) {
         setInterval(() => {
             window.location.href = "./credits"
-        }, 1000); 
+        }, 1000);
     } else if (i == 3) {
         setInterval(() => {
             window.location.href = "./about"
         }, 1000);
     }
-    
-    
+
+
     document.body.style.backgroundColor = "black"
 }
+//--------
