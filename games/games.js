@@ -24,7 +24,7 @@ function handleNavClick(i) {
     document.getElementById("main").style.opacity = "0"
     if (i === 1) {
         setInterval(() => {
-            window.location.href = "../"
+            window.location.href = "../?status=loaded"
         }, 1000);
 
     } else if (i === 2) {

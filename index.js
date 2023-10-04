@@ -1,6 +1,16 @@
+
 // ---------------
 // Debug
 const noLoading = 0;
+
+if (window.location.href.indexOf("status=loaded") > -1) {
+    
+    document.getElementById("load-grandparent").style.display = "none";
+    document.getElementById("main").style.visibility = "visible";
+    document.getElementById("main").style.opacity = 1;
+    document.body.style.backgroundColor = "white";
+    document.getElementById("main").style.transitionDelay = "0s"
+}
 
 if (noLoading === 1) {
     document.getElementById("load-grandparent").style.display = "none";
@@ -109,15 +119,6 @@ if (noLoading === 1) {
 }
 
 //-------------------
-
-/*
-ourGames.addEventListener("click", () => navClick("ourgames"))
-about.addEventListener("click", () => navClick("about"))
-*/
-/*
-function navClick (x) {
-    document.body.style.backgroundColor = "black"
-}*/
 //-----------------
 document.getElementById("nav-hover").addEventListener("mouseenter", () => {
     document.getElementById("s1").style.gridTemplateColumns = "1fr 3fr"
