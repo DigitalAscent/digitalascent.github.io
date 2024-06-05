@@ -1,6 +1,5 @@
-### digitalascent.space
-
-
+### This project has moved 
+New repo: https://github.com/gnayiqnat/digitalascent.space
 
 # TODO:
 - [ ] Mobile responsive
